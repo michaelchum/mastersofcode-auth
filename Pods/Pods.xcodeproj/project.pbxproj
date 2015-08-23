@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		60C817158B2C2E16AA43DC01AE6D2789 /* PBXContainerItemProxy */ = {
+		26C37A4948186F3478186AE4007AF676 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -319,11 +319,12 @@
 				98854B119569573DBA26A228D2046DCE /* Sources */,
 				C3489F5600E64BE56040BB3E5B0534D8 /* Frameworks */,
 				3081943768E8E90FDAF04E563218C807 /* Headers */,
+				53AC15981B89D5C3004AD26B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4C77DEF3E1839306D54A759A4FCB2CC5 /* PBXTargetDependency */,
+				8CEBC04646A0E16FD17A383D719D7E71 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -356,6 +357,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53AC15981B89D5C3004AD26B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 86a68f6f39e3130fec00316341a75c4aef5f2f73 8552e4c88b0c8588e69daee75478537bcdd6ccca9186905a489e040d271a82a9";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98854B119569573DBA26A228D2046DCE /* Sources */ = {
@@ -390,11 +407,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C77DEF3E1839306D54A759A4FCB2CC5 /* PBXTargetDependency */ = {
+		8CEBC04646A0E16FD17A383D719D7E71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Socket.IO-Client-Swift";
 			target = 0B2E2FB3FD2CE52AF625E6299190C17F /* Socket.IO-Client-Swift */;
-			targetProxy = 60C817158B2C2E16AA43DC01AE6D2789 /* PBXContainerItemProxy */;
+			targetProxy = 26C37A4948186F3478186AE4007AF676 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

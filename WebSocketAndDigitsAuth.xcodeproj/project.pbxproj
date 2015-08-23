@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		26F41761132138F8BB94A50B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951AFF2588CC61D5120FE69E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		53AC159A1B89D735004AD26B /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC15991B89D735004AD26B /* EventsViewController.swift */; };
+		53AC159C1B89D747004AD26B /* EventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC159B1B89D747004AD26B /* EventsCell.swift */; };
 		E90CB1AB1B896D0F00FF1A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CB1AA1B896D0F00FF1A57 /* AppDelegate.swift */; };
 		E90CB1AD1B896D0F00FF1A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CB1AC1B896D0F00FF1A57 /* ViewController.swift */; };
 		E90CB1B01B896D0F00FF1A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90CB1AE1B896D0F00FF1A57 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		0BEE8C13AA8517B7025EE7EC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		1D28C32B69F61342F6E6C53E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		53AC15991B89D735004AD26B /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		53AC159B1B89D747004AD26B /* EventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCell.swift; sourceTree = "<group>"; };
 		951AFF2588CC61D5120FE69E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90CB1A51B896D0F00FF1A57 /* WebSocketAndDigitsAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketAndDigitsAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90CB1A91B896D0F00FF1A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			children = (
 				E90CB1AA1B896D0F00FF1A57 /* AppDelegate.swift */,
 				E90CB1AC1B896D0F00FF1A57 /* ViewController.swift */,
+				53AC15991B89D735004AD26B /* EventsViewController.swift */,
+				53AC159B1B89D747004AD26B /* EventsCell.swift */,
 				E90CB1AE1B896D0F00FF1A57 /* Main.storyboard */,
 				E90CB1B11B896D0F00FF1A57 /* Images.xcassets */,
 				E90CB1B31B896D0F00FF1A57 /* LaunchScreen.xib */,
@@ -301,8 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AC159C1B89D747004AD26B /* EventsCell.swift in Sources */,
 				E90CB1AD1B896D0F00FF1A57 /* ViewController.swift in Sources */,
 				E90CB1AB1B896D0F00FF1A57 /* AppDelegate.swift in Sources */,
+				53AC159A1B89D735004AD26B /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

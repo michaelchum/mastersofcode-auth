@@ -10,6 +10,9 @@
 		26F41761132138F8BB94A50B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951AFF2588CC61D5120FE69E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		53AC159A1B89D735004AD26B /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC15991B89D735004AD26B /* EventsViewController.swift */; };
 		53AC159C1B89D747004AD26B /* EventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC159B1B89D747004AD26B /* EventsCell.swift */; };
+		53AC15A21B8A20C8004AD26B /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC15A11B8A20C8004AD26B /* CharityViewController.swift */; };
+		53AC15AA1B8A2E7D004AD26B /* Simplify.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53AC15A81B8A2E7D004AD26B /* Simplify.bundle */; };
+		53AC15AB1B8A2E7D004AD26B /* Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AC15A91B8A2E7D004AD26B /* Simplify.framework */; };
 		E90CB1AB1B896D0F00FF1A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CB1AA1B896D0F00FF1A57 /* AppDelegate.swift */; };
 		E90CB1AD1B896D0F00FF1A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90CB1AC1B896D0F00FF1A57 /* ViewController.swift */; };
 		E90CB1B01B896D0F00FF1A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90CB1AE1B896D0F00FF1A57 /* Main.storyboard */; };
@@ -33,6 +36,10 @@
 		1D28C32B69F61342F6E6C53E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		53AC15991B89D735004AD26B /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		53AC159B1B89D747004AD26B /* EventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCell.swift; sourceTree = "<group>"; };
+		53AC15A11B8A20C8004AD26B /* CharityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
+		53AC15A71B8A2CA6004AD26B /* WebSocketAndDigitsAuth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WebSocketAndDigitsAuth-Bridging-Header.h"; path = "WebSocketAndDigitsAuth/WebSocketAndDigitsAuth-Bridging-Header.h"; sourceTree = "<group>"; };
+		53AC15A81B8A2E7D004AD26B /* Simplify.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Simplify.bundle; sourceTree = "<group>"; };
+		53AC15A91B8A2E7D004AD26B /* Simplify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Simplify.framework; sourceTree = "<group>"; };
 		951AFF2588CC61D5120FE69E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90CB1A51B896D0F00FF1A57 /* WebSocketAndDigitsAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketAndDigitsAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90CB1A91B896D0F00FF1A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F41761132138F8BB94A50B /* Pods.framework in Frameworks */,
+				53AC15AB1B8A2E7D004AD26B /* Simplify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +76,8 @@
 		801DCF9ADEEC4867D33B20CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53AC15A81B8A2E7D004AD26B /* Simplify.bundle */,
+				53AC15A91B8A2E7D004AD26B /* Simplify.framework */,
 				951AFF2588CC61D5120FE69E /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -85,6 +95,7 @@
 		E90CB19C1B896D0F00FF1A57 = {
 			isa = PBXGroup;
 			children = (
+				53AC15A71B8A2CA6004AD26B /* WebSocketAndDigitsAuth-Bridging-Header.h */,
 				E90CB1A71B896D0F00FF1A57 /* WebSocketAndDigitsAuth */,
 				E90CB1BD1B896D0F00FF1A57 /* WebSocketAndDigitsAuthTests */,
 				E90CB1A61B896D0F00FF1A57 /* Products */,
@@ -108,6 +119,7 @@
 				E90CB1AA1B896D0F00FF1A57 /* AppDelegate.swift */,
 				E90CB1AC1B896D0F00FF1A57 /* ViewController.swift */,
 				53AC15991B89D735004AD26B /* EventsViewController.swift */,
+				53AC15A11B8A20C8004AD26B /* CharityViewController.swift */,
 				53AC159B1B89D747004AD26B /* EventsCell.swift */,
 				E90CB1AE1B896D0F00FF1A57 /* Main.storyboard */,
 				E90CB1B11B896D0F00FF1A57 /* Images.xcassets */,
@@ -226,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AC15AA1B8A2E7D004AD26B /* Simplify.bundle in Resources */,
 				E90CB1B01B896D0F00FF1A57 /* Main.storyboard in Resources */,
 				E90CB1B51B896D0F00FF1A57 /* LaunchScreen.xib in Resources */,
 				E90CB1B21B896D0F00FF1A57 /* Images.xcassets in Resources */,
@@ -307,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AC15A21B8A20C8004AD26B /* CharityViewController.swift in Sources */,
 				53AC159C1B89D747004AD26B /* EventsCell.swift in Sources */,
 				E90CB1AD1B896D0F00FF1A57 /* ViewController.swift in Sources */,
 				E90CB1AB1B896D0F00FF1A57 /* AppDelegate.swift in Sources */,
@@ -438,9 +452,40 @@
 			baseConfigurationReference = 1D28C32B69F61342F6E6C53E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WebSocketAndDigitsAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"DigitsKit\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Socket_IO_Client_Swift\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebSocketAndDigitsAuth/WebSocketAndDigitsAuth-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -449,9 +494,40 @@
 			baseConfigurationReference = 0BEE8C13AA8517B7025EE7EC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WebSocketAndDigitsAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"DigitsKit\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Socket_IO_Client_Swift\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WebSocketAndDigitsAuth/WebSocketAndDigitsAuth-Bridging-Header.h";
 			};
 			name = Release;
 		};

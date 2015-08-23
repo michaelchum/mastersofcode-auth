@@ -76,6 +76,7 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
         eventsTable.backgroundView = UIView(frame: eventsTable.bounds)
         eventsTable.backgroundView?.backgroundColor = UIColor.darkGrayColor()
         
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.eventsTable.reloadData()
         })
@@ -98,7 +99,5 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
         cell.avatarImage.layer.masksToBounds = true
         return cell
     }
-    
-    // MARK: UITableViewDelegate
     
 }

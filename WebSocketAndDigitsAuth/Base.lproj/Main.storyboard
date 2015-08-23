@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dme-kn-D9h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Y55-Xc-naZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,16 +14,16 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="419" y="320"/>
+            <point key="canvasLocation" x="320" y="-500"/>
         </scene>
-        <!--Events View Controller-->
+        <!--Performing Now-->
         <scene sceneID="Uwt-3C-yO8">
             <objects>
                 <viewController id="Dme-kn-D9h" customClass="EventsViewController" customModule="WebSocketAndDigitsAuth" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,14 +32,18 @@
                         <viewControllerLayoutGuide type="bottom" id="KaN-nh-Br7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3TA-6f-ont">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BaL-nC-ZCS">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="236"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BaL-nC-ZCS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="e6z-xE-QH7"/>
+                                    <constraint firstAttribute="width" constant="600" id="zYA-x0-7b7"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-pe-XjG">
-                                <rect key="frame" x="0.0" y="234" width="600" height="28"/>
+                                <rect key="frame" x="0.0" y="210" width="600" height="28"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxK-35-mhp">
                                         <rect key="frame" x="0.0" y="0.0" width="245" height="28"/>
@@ -56,7 +61,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbP-ZN-3id">
-                                <rect key="frame" x="0.0" y="262" width="600" height="39"/>
+                                <rect key="frame" x="0.0" y="238" width="600" height="39"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="is raising $3,000 for" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000027" translatesAutoresizingMaskIntoConstraints="NO" id="Kkz-zp-EgR">
                                         <rect key="frame" x="26" y="8" width="202" height="24"/>
@@ -80,7 +85,7 @@
                                 <color key="backgroundColor" red="0.45959595959595945" green="0.45959595959595945" blue="0.45959595959595945" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BV7-bx-L2k">
-                                <rect key="frame" x="0.0" y="300" width="600" height="350"/>
+                                <rect key="frame" x="0.0" y="275" width="600" height="320"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsCell" rowHeight="75" id="aYv-dH-FD5" customClass="EventsCell" customModule="WebSocketAndDigitsAuth" customModuleProvider="target">
@@ -118,9 +123,27 @@
                                     <outlet property="delegate" destination="Dme-kn-D9h" id="A9H-eu-nFP"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCh-E1-SYv">
+                                <rect key="frame" x="0.0" y="0.0" width="595" height="272"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8CQ-Gi-fS9" kind="show" id="zMS-nE-aHv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BaL-nC-ZCS" firstAttribute="leading" secondItem="3TA-6f-ont" secondAttribute="leadingMargin" constant="-16" id="HY7-vT-SQz"/>
+                            <constraint firstAttribute="centerX" secondItem="BaL-nC-ZCS" secondAttribute="centerX" id="K7c-4K-6f0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JCh-E1-SYv" secondAttribute="trailing" constant="-11" id="Ral-0j-IsY"/>
+                            <constraint firstItem="JCh-E1-SYv" firstAttribute="leading" secondItem="3TA-6f-ont" secondAttribute="leadingMargin" constant="-16" id="Xgc-TI-IdH"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Performing Now" id="5aG-zV-dvT">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="MvC-ql-LCo"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="currentBar" destination="pxK-35-mhp" id="lLm-Ly-FpX"/>
                         <outlet property="eventsTable" destination="BV7-bx-L2k" id="kj0-PR-PEb"/>
@@ -132,46 +155,153 @@
             </objects>
             <point key="canvasLocation" x="1234" y="315"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Qs4-pP-SNt">
+        <!--Charity View Controller-->
+        <scene sceneID="fiA-SK-ecB">
             <objects>
-                <tableViewController id="dzo-VU-lTM" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6NM-I0-mYm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <viewController id="8CQ-Gi-fS9" customClass="CharityViewController" customModule="WebSocketAndDigitsAuth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sUb-eX-20E"/>
+                        <viewControllerLayoutGuide type="bottom" id="4DS-dk-TiU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cMQ-rT-7Ig">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZe-o1-m1X">
+                                <rect key="frame" x="-6" y="0.0" width="606" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="8a8-wV-an1"/>
+                                    <constraint firstAttribute="height" constant="205" id="DrZ-vQ-aEp"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enm-us-6uq">
+                                <rect key="frame" x="0.0" y="233" width="600" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="is raising $3,000 for" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="cr3-mh-oGh">
+                                        <rect key="frame" x="26" y="8" width="202" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taylor Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="5W0-Ek-R9r">
+                                        <rect key="frame" x="8" y="8" width="66" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                        <color key="textColor" red="0.99215686270000003" green="0.83897642149999996" blue="0.32505922120000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doctors Without Borders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="tPg-0o-Ph5">
+                                        <rect key="frame" x="182" y="8" width="134" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                        <color key="textColor" red="0.99215686270000003" green="0.83897642149999996" blue="0.32505922120000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45959595959999999" green="0.45959595959999999" blue="0.45959595959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vVs-rv-uA0">
+                                <rect key="frame" x="0.0" y="271" width="600" height="345"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-Kd-EAb">
+                                        <rect key="frame" x="0.0" y="137" width="600" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4To-Vm-Uk9">
+                                                <rect key="frame" x="28" y="8" width="79" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Donate $10">
+                                                    <color key="titleColor" red="0.99215686270000003" green="0.74638986620000003" blue="0.37241608790000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLb-Qg-uAB">
+                                                <rect key="frame" x="28" y="49" width="79" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Donate $20">
+                                                    <color key="titleColor" red="0.99215686270000003" green="0.74638986620000003" blue="0.37241608790000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovb-9Z-BF2">
+                                                <rect key="frame" x="28" y="90" width="161" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Donate another amount">
+                                                    <color key="titleColor" red="0.99215686270000003" green="0.74638986620000003" blue="0.37241608790000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.41414141414141403" green="0.41414141414141403" blue="0.41414141414141403" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs4-9J-hyd">
+                                        <rect key="frame" x="26" y="14" width="548" height="106"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="Hlp-4U-OZz"/>
+                                            <constraint firstAttribute="height" constant="106" id="r8m-k9-A67"/>
+                                        </constraints>
+                                        <string key="text">We are Doctors Without Borders/Médecins Sans Frontières (MSF). We help people worldwide where the need is greatest, delivering emergency medical aid to people affected by conflict, epidemics, disasters or exclusion from health care.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVO-2W-qwi">
+                                <rect key="frame" x="0.0" y="205" width="600" height="28"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kc2-C4-QR1">
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$2,067.43" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8S-5q-TKN">
+                                                <rect key="frame" x="156" y="2" width="76" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fpp-go-pxc">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpp-go-pxc" id="0Xn-DW-2Hv">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="dzo-VU-lTM" id="W52-Eh-BBw"/>
-                            <outlet property="delegate" destination="dzo-VU-lTM" id="FA5-ks-j34"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ieb-8b-7eu"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f3a-ik-5E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="vVs-rv-uA0" firstAttribute="top" secondItem="qVO-2W-qwi" secondAttribute="bottom" constant="38" id="63i-bz-kp6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentBar" destination="kc2-C4-QR1" id="wHS-m7-z0y"/>
+                        <outlet property="donateTen" destination="4To-Vm-Uk9" id="lY1-VB-vpU"/>
+                        <outlet property="fullBar" destination="qVO-2W-qwi" id="K9F-2h-6tr"/>
+                        <outlet property="heroImage" destination="hZe-o1-m1X" id="ANv-yS-DRH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fql-Xu-QhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1933" y="315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="re5-Za-q9J">
             <objects>
                 <navigationController id="Y55-Xc-naZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BB4-rc-BP1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="BB4-rc-BP1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="dzo-VU-lTM" kind="relationship" relationship="rootViewController" id="fVd-gs-mZV"/>
+                        <segue destination="Dme-kn-D9h" kind="relationship" relationship="rootViewController" id="pKs-U7-Xgn"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" id="89J-m3-6rX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yy-92-TxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="452" y="315"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Digits" "$(PODS_ROOT)/Fabric" "$(PODS_ROOT)/TwitterCore"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Digits" "${PODS_ROOT}/Headers/Public/Digits/DigitsKit" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/Fabric/Fabric" "${PODS_ROOT}/Headers/Public/TwitterCore" "${PODS_ROOT}/Headers/Public/TwitterCore/TwitterCore"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Socket_IO_Client_Swift.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Digits" -isystem "${PODS_ROOT}/Headers/Public/Digits/DigitsKit" -isystem "${PODS_ROOT}/Headers/Public/Fabric" -isystem "${PODS_ROOT}/Headers/Public/Fabric/Fabric" -isystem "${PODS_ROOT}/Headers/Public/TwitterCore" -isystem "${PODS_ROOT}/Headers/Public/TwitterCore/TwitterCore"
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "AddressBook" -framework "CoreData" -framework "CoreGraphics" -framework "DigitsKit" -framework "Fabric" -framework "Foundation" -framework "Security" -framework "Socket_IO_Client_Swift" -framework "TwitterCore" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods
+PODS_ROOT = ${SRCROOT}/Pods
